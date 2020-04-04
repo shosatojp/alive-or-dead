@@ -1,6 +1,12 @@
 #!/bin/bash
 
+if [ -z $AD_LINE_TOKEN ];then
+    echo AD_LINE_TOKEN is not set
+    exit 1
+fi
+
 line_token=$AD_LINE_TOKEN
+
 
 # line_notify message
 line_notify(){
